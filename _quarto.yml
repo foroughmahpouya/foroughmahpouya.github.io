@@ -21,4 +21,5 @@ format:
     toc: false
     smooth-scroll: true
     link-external-newwindow: true
-    include-in-header: google-verification.html
+    include-in-header:
+      - google-verification.html
