@@ -1,0 +1,188 @@
+---
+pagetitle: "Forough Mahpouya | Industrial & Systems Engineering"
+description: "Forough Mahpouya is a Ph.D. candidate in Industrial Engineering at the University at Buffalo developing causal inference and representation learning methods for observational health data."
+page-layout: full
+---
+
+::: {.home-shell}
+
+::: {.profile-column}
+
+![](assets/forough-mahpouya.jpeg){.profile-photo fig-alt="Forough Mahpouya"}
+
+::: {.contact-box}
+
+## Contact
+
+**University at Buffalo**  
+Department of Industrial and Systems Engineering  
+Buffalo, New York
+
+<strong>Email</strong>
+<div class="email-stack">
+<a href="mailto:foroughm@buffalo.edu">foroughm@buffalo.edu</a>
+<a href="mailto:foroughmahpouya@gmail.com">foroughmahpouya@gmail.com</a>
+</div>
+
+[Google Scholar](https://scholar.google.com/citations?hl=en&user=VUgmv7cAAAAJ)
+[LinkedIn](https://www.linkedin.com/in/foroughmahpouya)
+
+:::
+
+:::
+
+
+::: {.main-column}
+
+# Forough Mahpouya
+
+<div class="position-line">
+Ph.D. Candidate in Industrial Engineering
+</div>
+
+<div class="affiliation-line">
+Department of Industrial and Systems Engineering · University at Buffalo
+</div>
+
+::: {.bio-text}
+
+I develop causal inference and representation learning methods for decision-making using observational data, with health systems as my primary application. My research asks how treatment effects can be estimated reliably when treatment groups differ at baseline and when the information available about individuals is incomplete or differs across people.
+
+My dissertation develops balancing representation methods for continuous treatment causal estimation and applies causal and measurement methods to end-of-life care. A broader question in my research is how data visibility affects the evidence available for causal estimation: people with similar underlying characteristics or needs can be represented differently because one is measured more completely. I study how these differences affect treatment assignment, causal estimation, and subsequent decisions based on observational data.
+
+My broader research includes heterogeneous treatment-effect analysis, sequential experimentation, robust statistics, and statistical process control. My work has appeared in *IISE Transactions* and *Quality and Reliability Engineering International*. I received the 2025–2026 UB ISE Graduate Student Teaching Award and was selected as an IISE Future Faculty Fellow.
+
+:::
+
+<a href="files/Forough-Mahpouya-CV.pdf"
+   class="cv-button"
+   download>
+   Download CV
+</a>
+
+::: {.research-tabs .panel-tabset}
+
+## Research
+
+My research asks how causal methods can be developed when observational data are shaped by both treatment decisions and differences in what is measured. I combine causal inference, representation learning, statistical methods, and decision analysis to develop methods that support decision-making in complex health systems.
+
+### Causal Representation Learning
+
+Treatment groups in observational studies are rarely comparable at baseline. Balancing representation learning addresses this problem by learning representations that make treatment groups more comparable while preserving the information needed for outcome estimation.
+
+My dissertation develops theory for a neural balancing representation architecture for causal estimation with continuous treatments. I led the theoretical development, derived the identification conditions and supporting proofs, and designed and implemented the computational pipeline.
+
+A central question in this work is whether a representation preserves the information needed to estimate clinically meaningful differences in treatment effects, rather than achieving statistical balance alone.
+
+### Measurement and Data Availability
+
+Health records do not contain the same level of information for every person. Two people with similar underlying needs may therefore be represented differently because one is measured more completely.
+
+I treat differences in data availability as part of the causal problem rather than only as a preprocessing issue. My current applications focus on older adults and family caregivers, for whom caregiving circumstances and caregiver burden may influence care decisions and outcomes.
+
+This work includes developing measures of caregiver burden for analysis and studying how differences in what is measured may affect treatment assignment, causal estimation, and decision-making.
+
+### Treatment-Effect Heterogeneity and Decision Methods
+
+Average treatment effects can mask important differences across people and settings. I study methods for identifying and interpreting heterogeneous treatment effects and clinically relevant subgroups.
+
+I developed a taxonomy and decision framework for heterogeneous treatment-effect methods that links characteristics of the data and the clinical objective to stability, interpretability, and fairness.
+
+My complementary work in sequential experimentation asks a related question: when more information can be collected, which observation or experiment is most valuable?
+
+
+## Publications
+
+### Peer-Reviewed Publications
+
+**Mahpouya, F., Burris, C. J., Paul, H., & Nikolaev, A. (2026).**  
+*Maximizing the Expected Value of Experimentation for Finding Top-κ Rank via Aggregation of Pairwise Comparisons.*  
+**IISE Transactions.**  
+[Article](https://doi.org/10.1080/24725854.2026.2645062)
+
+**Mahpouya, F., Shahriari, H., & Roghanian, E. (2022).**  
+*Design of a Robust T² Control Chart, a Re-Sampling Approach.*  
+**Quality and Reliability Engineering International, 38(2), 924–940.**  
+[Article](https://doi.org/10.1002/qre.3022)
+
+### Preprints
+
+**Mahpouya, F., Casucci, S., Sullivan, S., & Barrick, C. (2025).**  
+*Representing Caregiver Burden in Observational Studies: Development of the Caregiver Burden Index (CareBI) Using NSOC.*  
+Preprint.  
+[Preprint](https://arxiv.org/abs/2510.21630)
+
+### Research Profiles
+
+[Google Scholar](https://scholar.google.com/citations?hl=en&user=VUgmv7cAAAAJ) ·
+[ORCID](https://orcid.org/0000-0001-8550-9508)
+
+
+## Teaching
+
+My goal in teaching Industrial and Systems Engineering is to help students connect mathematical and computational models with the decisions those models are intended to support. I emphasize problem formulation, transparent assumptions, computational implementation, and interpretation of results.
+
+At the University at Buffalo, I have led recitations, laboratories, lectures, and review sessions across undergraduate and graduate courses.
+
+### Probability, Statistics, and Simulation
+
+**EAS 305 — Applied Probability & Statistics**  
+Led recitations, designed recitation materials, delivered Minitab laboratory instruction, and conducted exam-review lectures.
+
+**IE 477 — Simulation Modeling and Analysis**  
+Led recitations and course lectures and designed instructional materials using Arena and @RISK.
+
+**IE 551 — Simulation and Stochastic Models**  
+Delivered course instruction and supported students through group-specific active office hours.
+
+### Manufacturing and Operations
+
+**IE 406/506 — Computer Integrated Manufacturing**  
+Led laboratory tutorials using Autodesk Fusion 360 for 3D CAD modeling and manufacturing.
+
+**IE 505 — Production Planning and Control**  
+Supported instruction in production-planning and operations topics.
+
+### Health Systems
+
+**IE 585 — Industrial Engineering Principles and Practice in Healthcare**  
+Guest lectured on PICO question formulation and analysis of complex observational healthcare datasets.
+
+### Recognition
+
+**2025–2026 UB ISE Graduate Student Teaching Award**
+
+In Spring 2025, I also contributed to *Effective Pedagogy for Teaching Assistants* at UB, sharing approaches for recitation instruction and Universal Design for Learning.
+
+
+## Talks & News
+
+### 2026
+
+**IISE Annual Conference & Expo — Arlington, Texas**  
+Presented *Adversarial Balancing for Estimating the Causal Effect of Caregiver Burden on Patient Long-Term Care Transitions.*
+
+**UB ISE Graduate Student Teaching Award**  
+Received the 2025–2026 Graduate Student Teaching Award from the Department of Industrial and Systems Engineering at the University at Buffalo.
+
+**IISE Future Faculty Fellows Program**  
+Selected for the 2025–2026 IISE Future Faculty Fellows Program.
+
+### 2025
+
+**INFORMS Annual Meeting — Atlanta, Georgia**  
+Presented *Representing Caregiver Burden in Observational Studies: Development of the Caregiver Burden Index (CareBI) Using NSOC.*
+
+### Earlier Presentations
+
+**2020 — 16th Iran International Industrial Engineering Conference**  
+Presented research on resampling methods for robust Hotelling T² control-chart design with limited data.
+
+**2019 — 15th Iran International Industrial Engineering Conference**  
+Presented *A Bootstrapping Approach to Introduce a Robust Multivariate Control Chart.*
+
+:::
+
+:::
+
+:::

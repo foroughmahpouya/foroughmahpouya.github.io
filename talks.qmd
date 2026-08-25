@@ -1,0 +1,99 @@
+---
+title: "Talks & News"
+description: "Selected talks, conference presentations, awards, and research news from Forough Mahpouya."
+---
+
+## 2026
+
+::: {.news-item}
+
+<div class="news-date">2026</div>
+
+<div class="news-content">
+
+**IISE Annual Conference & Expo — Arlington, Texas**
+
+Presented *Adversarial Balancing for Estimating the Causal Effect of Caregiver Burden on Patient Long-Term Care Transitions*.
+
+</div>
+
+:::
+
+
+::: {.news-item}
+
+<div class="news-date">2025–2026</div>
+
+<div class="news-content">
+
+**UB ISE Graduate Student Teaching Award**
+
+Received the Department of Industrial and Systems Engineering Graduate Student Teaching Award at the University at Buffalo.
+
+</div>
+
+:::
+
+
+::: {.news-item}
+
+<div class="news-date">2025–2026</div>
+
+<div class="news-content">
+
+**IISE Future Faculty Fellows Program**
+
+Selected as an IISE Future Faculty Fellow in preparation for an academic career in Industrial and Systems Engineering.
+
+</div>
+
+:::
+
+
+## 2025
+
+::: {.news-item}
+
+<div class="news-date">2025</div>
+
+<div class="news-content">
+
+**INFORMS Annual Meeting — Atlanta, Georgia**
+
+Presented *Representing Caregiver Burden in Observational Studies: Development of the Caregiver Burden Index (CareBI) Using NSOC*.
+
+</div>
+
+:::
+
+
+## Earlier Presentations
+
+::: {.news-item}
+
+<div class="news-date">2020</div>
+
+<div class="news-content">
+
+**16th Iran International Industrial Engineering Conference**
+
+Presented research on using resampling methods to design a robust Hotelling T² control chart for limited data.
+
+</div>
+
+:::
+
+
+::: {.news-item}
+
+<div class="news-date">2019</div>
+
+<div class="news-content">
+
+**15th Iran International Industrial Engineering Conference**
+
+Presented *A Bootstrapping Approach to Introduce a Robust Multivariate Control Chart*.
+
+</div>
+
+:::

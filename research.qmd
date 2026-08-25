@@ -1,0 +1,62 @@
+---
+title: "Research"
+description: "Research program of Forough Mahpouya in causal inference, representation learning, measurement, and health-system decision making."
+---
+
+<div class="research-intro">
+
+My research asks how causal learning should be designed when observational data are shaped by both treatment decisions and what gets measured. I combine causal inference, representation learning, statistical methods, and decision analysis to develop methods that can support decisions in complex health systems.
+
+</div>
+
+::: {.research-note}
+
+**Current methodological focus.** My dissertation develops balancing-representation methods for causal estimation with continuous treatments and applies causal and measurement methods to questions involving caregiver burden and older-adult care.
+
+:::
+
+
+::: {.research-area}
+
+## 1. Causal Representation Learning
+
+Observational treatment groups are rarely comparable at baseline. Balancing representation learning addresses this problem by learning a transformed representation of the observed covariates in which treatment groups are more comparable while retaining information needed for outcome estimation.
+
+My dissertation advances theory for a neural balancing-representation architecture for continuous-treatment causal estimation. I led the theoretical development, derived identification conditions and supporting proofs, and designed and implemented the associated research pipeline.
+
+A central question in this work is not simply whether a representation achieves statistical balance, but whether it preserves the information required to estimate meaningful treatment-effect heterogeneity.
+
+:::
+
+
+::: {.research-area}
+
+## 2. Measurement and Information Visibility in Health Systems
+
+Healthcare records do not capture every person with the same completeness. Two people with similar underlying needs may therefore appear different in observational data because one has been measured more completely.
+
+I study this information visibility as part of the causal problem rather than treating missing or uneven measurement only as a preprocessing issue. My current applications focus on older adults and family caregivers, where caregiving context and caregiver burden can influence care decisions and outcomes.
+
+This work includes the development of analysis-ready measures of caregiver burden and the study of how selective measurement may affect treatment assignment, causal estimation, and clinical decision support.
+
+:::
+
+
+::: {.research-area}
+
+## 3. Treatment-Effect Heterogeneity and Decision Methods
+
+Average effects can conceal clinically meaningful differences across people and settings. I study methods for identifying and interpreting heterogeneous treatment effects and subgroups in observational healthcare data.
+
+I developed a structured taxonomy and decision map for heterogeneous treatment-effect methods, connecting characteristics of the data and clinical objective with considerations such as stability, interpretability, and fairness.
+
+My complementary research in sequential experimentation asks a related decision question: when additional information can be collected, which observation or experiment is most valuable? This work provides a broader foundation for connecting statistical learning with decision making under uncertainty.
+
+:::
+
+
+::: {.research-note}
+
+**Application domain.** Health systems are my primary application, particularly decisions involving older adults, caregivers, care transitions, and observational healthcare data. The methodological questions extend more broadly to settings in which interventions, measurement processes, and future decisions interact.
+
+:::

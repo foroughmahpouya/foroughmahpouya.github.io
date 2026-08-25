@@ -1,0 +1,68 @@
+---
+title: "Teaching"
+description: "Teaching experience and philosophy of Forough Mahpouya in Industrial and Systems Engineering."
+---
+
+## Teaching Approach
+
+My goal in teaching Industrial and Systems Engineering is to help students connect mathematical and computational models to the decisions they inform. I emphasize problem formulation, explicit assumptions, computational implementation, and interpretation of results.
+
+At the University at Buffalo, I have led recitations, laboratory sessions, lectures, and review sessions in undergraduate and graduate courses.
+
+
+## Selected Teaching Experience
+
+::: {.teaching-block}
+
+### Probability, Statistics & Simulation
+
+**EAS 305 — Applied Probability & Statistics**
+
+Led recitations, designed recitation materials, delivered Minitab laboratory instruction, and conducted exam-review lectures.
+
+**IE 477 — Simulation Modeling and Analysis**
+
+Led recitations and course lectures and designed instructional materials using Arena and @RISK.
+
+**IE 551 — Simulation and Stochastic Models**
+
+Delivered course instruction and supported students through group-specific active office hours.
+
+:::
+
+
+::: {.teaching-block}
+
+### Manufacturing & Operations
+
+**IE 406/506 — Computer Integrated Manufacturing**
+
+Led laboratory tutorials using Autodesk Fusion 360 for 3D CAD modeling and manufacturing.
+
+**IE 505 — Production Planning and Control**
+
+Supported instruction in core production-planning and operations topics.
+
+:::
+
+
+::: {.teaching-block}
+
+### Health Systems
+
+**IE 585 — Industrial Engineering Principles and Practice in Healthcare**
+
+Guest lectured on PICO question formulation and the analysis of complex observational healthcare datasets for interpretable decision support.
+
+:::
+
+
+## Recognition
+
+**2025–2026 UB ISE Graduate Student Teaching Award**  
+Department of Industrial and Systems Engineering, University at Buffalo
+
+
+## Teaching Development
+
+In Spring 2025, I contributed to *Effective Pedagogy for Teaching Assistants* at the University at Buffalo, sharing approaches for leading recitations and addressing teaching-assistant challenges using Universal Design for Learning.

@@ -1,0 +1,26 @@
+---
+title: "Curriculum Vitae"
+description: "Academic curriculum vitae of Forough Mahpouya."
+---
+
+My curriculum vitae provides detailed information on my research, publications, teaching, presentations, honors, and professional experience.
+
+::: {.cv-panel}
+
+### Academic CV
+
+[Download CV](files/Forough-Mahpouya-CV.pdf){.download-button}
+
+:::
+
+
+## Research Areas
+
+Causal inference · Representation learning · Healthcare analytics · Treatment-effect heterogeneity · Sequential experimentation · Robust statistics
+
+
+## Current Appointment
+
+**Ph.D. Candidate in Industrial Engineering**  
+Department of Industrial and Systems Engineering  
+University at Buffalo

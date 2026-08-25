@@ -1,0 +1,37 @@
+---
+title: "Contact"
+description: "Contact information and professional profiles for Forough Mahpouya."
+---
+
+I welcome conversations about research collaborations, seminars, academic opportunities, and related work in causal inference, machine learning, healthcare analytics, and Industrial and Systems Engineering.
+
+
+::: {.contact-panel}
+
+### University
+
+**Forough Mahpouya**  
+Ph.D. Candidate in Industrial Engineering  
+Department of Industrial and Systems Engineering  
+University at Buffalo  
+Buffalo, New York, USA
+
+
+### Email
+
+**University:** foroughm@buffalo.edu
+
+**Permanent:** foroughmahpouya@gmail.com
+
+
+### Professional Profiles
+
+[Google Scholar](https://scholar.google.com/citations?hl=en&user=VUgmv7cAAAAJ)
+
+[ORCID](https://orcid.org/0000-0001-8550-9508)
+
+[LinkedIn](https://www.linkedin.com/in/foroughmahpouya)
+
+[GitHub](https://github.com/foroughmahpouya)
+
+:::
