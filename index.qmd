@@ -93,24 +93,27 @@ My complementary work in sequential experimentation asks a related question: whe
 
 ## Publications
 
-### Peer-Reviewed Publications
+### Refereed Journal Articles
 
-**Mahpouya, F., Burris, C. J., Paul, H., & Nikolaev, A. (2026).**  
-*Maximizing the Expected Value of Experimentation for Finding Top-κ Rank via Aggregation of Pairwise Comparisons.*  
-**IISE Transactions.**  
-[Article](https://doi.org/10.1080/24725854.2026.2645062)
+::: {.apa-reference}
+**Mahpouya, F.**, Burris, C. J., Paul, H., & Nikolaev, A. (2026). Maximizing the expected value of experimentation for finding top-κ rank via aggregation of pairwise comparisons. *IISE Transactions*. https://doi.org/10.1080/24725854.2026.2645062
+:::
 
-**Mahpouya, F., Shahriari, H., & Roghanian, E. (2022).**  
-*Design of a Robust T² Control Chart, a Re-Sampling Approach.*  
-**Quality and Reliability Engineering International, 38(2), 924–940.**  
-[Article](https://doi.org/10.1002/qre.3022)
+::: {.apa-reference}
+**Mahpouya, F.**, Shahriari, H., & Roghanian, E. (2022). Design of a robust T² control chart, a re-sampling approach. *Quality and Reliability Engineering International, 38*(2), 924–940. https://doi.org/10.1002/qre.3022
+:::
+
 
 ### Preprints
 
-**Mahpouya, F., Casucci, S., Sullivan, S., & Barrick, C. (2025).**  
-*Representing Caregiver Burden in Observational Studies: Development of the Caregiver Burden Index (CareBI) Using NSOC.*  
-Preprint.  
-[Preprint](https://arxiv.org/abs/2510.21630)
+::: {.apa-reference}
+**Mahpouya, F.**, Casucci, S., Sullivan, S., & Barrick, C. (2025). Representing caregiver burden in observational studies: Development of the Caregiver Burden Index (CareBI) using NSOC [Preprint]. *arXiv*. https://doi.org/10.48550/arXiv.2510.21630
+:::
+
+::: {.apa-reference}
+Das, S., Casucci, S., **Mahpouya, F.**, & Nikolaev, A. (2026). Treatment effect estimation from observational data in healthcare: Study designs, inherent biases, and a propensity score focused quality assessment scale [Preprint]. *SSRN*. https://doi.org/10.2139/ssrn.6748684
+:::
+
 
 ### Research Profiles
 
