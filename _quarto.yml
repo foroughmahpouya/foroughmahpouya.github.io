@@ -13,6 +13,7 @@ website:
     center: "© 2026 Forough Mahpouya · University at Buffalo"
     border: false
 
+
 format:
   html:
     theme: cosmo
@@ -20,3 +21,4 @@ format:
     toc: false
     smooth-scroll: true
     link-external-newwindow: true
+    include-in-header: google-verification.html
