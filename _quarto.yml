@@ -25,3 +25,5 @@ format:
     link-external-newwindow: true
     include-in-header:
       - google-verification.html
+    include-after-body:
+      - cloudflare.html
