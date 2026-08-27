@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Forough Mahpouya is a Ph.D.&nbsp;candidate in Industrial Engineering at the University at Buffalo developing causal inference and representation learning methods for observational health data.">
+<meta name="description" content="Forough Mahpouya is a Ph.D.&nbsp;candidate in Industrial and Systems Engineering at the University at Buffalo developing causal inference and representation learning methods for observational health data.">
 
 <title>Forough Mahpouya | Industrial &amp; Systems Engineering – Forough Mahpouya</title>
 <style>
@@ -237,6 +237,43 @@ Presented <em>A Bootstrapping Approach to Introduce a Robust Multivariate Contro
 <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;: &quot;4296ccc8f12949839071b527c1c0fcdd&quot;}"></script>
 
 <!-- End Cloudflare Web Analytics -->
+<script>
+
+(function () {
+
+  fetch(
+
+    "https://website-visit-logger.foroughmahpouya.workers.dev/collect",
+
+    {
+
+      method: "POST",
+
+      headers: {
+
+        "Content-Type": "application/json"
+
+      },
+
+      body: JSON.stringify({
+
+        page: window.location.pathname
+
+      }),
+
+      keepalive: true
+
+    }
+
+  ).catch(function () {
+
+    // Analytics must never interfere with the website.
+
+  });
+
+})();
+
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

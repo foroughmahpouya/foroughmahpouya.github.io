@@ -1,0 +1,19 @@
+<script>
+(function () {
+  fetch(
+    "https://website-visit-logger.foroughmahpouya.workers.dev/collect",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        page: window.location.pathname
+      }),
+      keepalive: true
+    }
+  ).catch(function () {
+    // Analytics must never interfere with the website.
+  });
+})();
+</script>

@@ -1,6 +1,6 @@
 ---
 pagetitle: "Forough Mahpouya | Industrial & Systems Engineering"
-description: "Forough Mahpouya is a Ph.D. candidate in Industrial Engineering at the University at Buffalo developing causal inference and representation learning methods for observational health data."
+description: "Forough Mahpouya is a Ph.D. candidate in Industrial and Systems Engineering at the University at Buffalo developing causal inference and representation learning methods for observational health data."
 page-layout: full
 ---
 

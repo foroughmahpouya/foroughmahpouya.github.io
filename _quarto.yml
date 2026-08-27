@@ -27,3 +27,4 @@ format:
       - google-verification.html
     include-after-body:
       - cloudflare.html
+      - analytics.html
