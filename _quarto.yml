@@ -20,6 +20,7 @@ format:
   html:
     theme: cosmo
     css: styles.css
+    anchor-sections: false
     toc: false
     smooth-scroll: true
     link-external-newwindow: true
