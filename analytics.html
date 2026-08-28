@@ -1,19 +1,33 @@
 <script>
 (function () {
-  fetch(
-    "https://website-visit-logger.foroughmahpouya.workers.dev/collect",
-    {
+  const endpoint =
+    "https://website-visit-logger.foroughmahpouya.workers.dev/collect";
+
+  function currentPage() {
+    return window.location.pathname + window.location.hash;
+  }
+
+  function track(page) {
+    fetch(endpoint, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        page: window.location.pathname
+        page: page
       }),
       keepalive: true
-    }
-  ).catch(function () {
-    // Analytics must never interfere with the website.
+    }).catch(function () {
+      // Analytics must never interfere with the website.
+    });
+  }
+
+  // Record initial page/section
+  track(currentPage());
+
+  // Record movement between sections of the single-page website
+  window.addEventListener("hashchange", function () {
+    track(currentPage());
   });
 })();
 </script>

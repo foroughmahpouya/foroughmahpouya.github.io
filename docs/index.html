@@ -241,11 +241,23 @@ Presented <em>A Bootstrapping Approach to Introduce a Robust Multivariate Contro
 
 (function () {
 
-  fetch(
+  const endpoint =
 
-    "https://website-visit-logger.foroughmahpouya.workers.dev/collect",
+    "https://website-visit-logger.foroughmahpouya.workers.dev/collect";
 
-    {
+
+
+  function currentPage() {
+
+    return window.location.pathname + window.location.hash;
+
+  }
+
+
+
+  function track(page) {
+
+    fetch(endpoint, {
 
       method: "POST",
 
@@ -257,17 +269,33 @@ Presented <em>A Bootstrapping Approach to Introduce a Robust Multivariate Contro
 
       body: JSON.stringify({
 
-        page: window.location.pathname
+        page: page
 
       }),
 
       keepalive: true
 
-    }
+    }).catch(function () {
 
-  ).catch(function () {
+      // Analytics must never interfere with the website.
 
-    // Analytics must never interfere with the website.
+    });
+
+  }
+
+
+
+  // Record initial page/section
+
+  track(currentPage());
+
+
+
+  // Record movement between sections of the single-page website
+
+  window.addEventListener("hashchange", function () {
+
+    track(currentPage());
 
   });
 
