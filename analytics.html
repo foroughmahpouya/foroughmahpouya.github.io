@@ -1,23 +1,29 @@
 <script>
 (function () {
   // ANALYTICS_FINAL_BOOTSTRAP_TABS
-  
-  // Do not track this browser if the owner opt-out flag is enabled.
-  try {
-    if (localStorage.getItem("fm_analytics_owner_optout") === "1") {
-      return;
-    }
-  } catch (e) {
-    // If localStorage is unavailable, analytics continues normally.
-  }
 
   const endpoint =
     "https://website-visit-logger.foroughmahpouya.workers.dev/collect";
 
   const sent = new Set();
 
+  function ownerOptedOut() {
+    try {
+      return localStorage.getItem("fm_analytics_owner_optout") === "1";
+    } catch (e) {
+      return false;
+    }
+  }
+
   function track(value) {
-    if (!value || sent.has(value)) return;
+    // Check on EVERY event, not only at page load.
+    if (ownerOptedOut()) {
+      return;
+    }
+
+    if (!value || sent.has(value)) {
+      return;
+    }
 
     sent.add(value);
 
@@ -35,6 +41,12 @@
     });
   }
 
+  // If this browser is already opted out, do not
+  // even register the remaining analytics listeners.
+  if (ownerOptedOut()) {
+    return;
+  }
+
   function slug(text) {
     return text
       .trim()
@@ -47,8 +59,6 @@
   // Website opened
   track("/");
 
-  // Quarto / Bootstrap tabs:
-  // Research, Publications, Teaching, Talks & News
   document
     .querySelectorAll('.research-tabs a[data-bs-toggle="tab"]')
     .forEach(function (tab) {
@@ -61,13 +71,11 @@
       });
     });
 
-  // Downloads and external links
   document.addEventListener("click", function (event) {
     const link = event.target.closest("a[href]");
 
     if (!link) return;
 
-    // Tabs are handled above.
     if (link.getAttribute("data-bs-toggle") === "tab") {
       return;
     }
@@ -86,19 +94,16 @@
       return;
     }
 
-    // CV / PDF download
     if (url.pathname.toLowerCase().endsWith(".pdf")) {
       track("/download" + url.pathname);
       return;
     }
 
-    // Google Scholar
     if (url.hostname === "scholar.google.com") {
       track("/external/google-scholar");
       return;
     }
 
-    // LinkedIn
     if (
       url.hostname === "linkedin.com" ||
       url.hostname.endsWith(".linkedin.com")
@@ -107,13 +112,11 @@
       return;
     }
 
-    // ORCID
     if (url.hostname === "orcid.org") {
       track("/external/orcid");
       return;
     }
 
-    // Other external links
     if (url.origin !== window.location.origin) {
       track("/external/" + url.hostname);
     }

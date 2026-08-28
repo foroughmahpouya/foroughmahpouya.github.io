@@ -243,24 +243,6 @@ Presented <em>A Bootstrapping Approach to Introduce a Robust Multivariate Contro
 
   // ANALYTICS_FINAL_BOOTSTRAP_TABS
 
-  
-
-  // Do not track this browser if the owner opt-out flag is enabled.
-
-  try {
-
-    if (localStorage.getItem("fm_analytics_owner_optout") === "1") {
-
-      return;
-
-    }
-
-  } catch (e) {
-
-    // If localStorage is unavailable, analytics continues normally.
-
-  }
-
 
 
   const endpoint =
@@ -273,9 +255,39 @@ Presented <em>A Bootstrapping Approach to Introduce a Robust Multivariate Contro
 
 
 
+  function ownerOptedOut() {
+
+    try {
+
+      return localStorage.getItem("fm_analytics_owner_optout") === "1";
+
+    } catch (e) {
+
+      return false;
+
+    }
+
+  }
+
+
+
   function track(value) {
 
-    if (!value || sent.has(value)) return;
+    // Check on EVERY event, not only at page load.
+
+    if (ownerOptedOut()) {
+
+      return;
+
+    }
+
+
+
+    if (!value || sent.has(value)) {
+
+      return;
+
+    }
 
 
 
@@ -311,6 +323,18 @@ Presented <em>A Bootstrapping Approach to Introduce a Robust Multivariate Contro
 
 
 
+  // If this browser is already opted out, do not
+
+  // even register the remaining analytics listeners.
+
+  if (ownerOptedOut()) {
+
+    return;
+
+  }
+
+
+
   function slug(text) {
 
     return text
@@ -334,10 +358,6 @@ Presented <em>A Bootstrapping Approach to Introduce a Robust Multivariate Contro
   track("/");
 
 
-
-  // Quarto / Bootstrap tabs:
-
-  // Research, Publications, Teaching, Talks & News
 
   document
 
@@ -363,8 +383,6 @@ Presented <em>A Bootstrapping Approach to Introduce a Robust Multivariate Contro
 
 
 
-  // Downloads and external links
-
   document.addEventListener("click", function (event) {
 
     const link = event.target.closest("a[href]");
@@ -374,8 +392,6 @@ Presented <em>A Bootstrapping Approach to Introduce a Robust Multivariate Contro
     if (!link) return;
 
 
-
-    // Tabs are handled above.
 
     if (link.getAttribute("data-bs-toggle") === "tab") {
 
@@ -413,8 +429,6 @@ Presented <em>A Bootstrapping Approach to Introduce a Robust Multivariate Contro
 
 
 
-    // CV / PDF download
-
     if (url.pathname.toLowerCase().endsWith(".pdf")) {
 
       track("/download" + url.pathname);
@@ -425,8 +439,6 @@ Presented <em>A Bootstrapping Approach to Introduce a Robust Multivariate Contro
 
 
 
-    // Google Scholar
-
     if (url.hostname === "scholar.google.com") {
 
       track("/external/google-scholar");
@@ -436,8 +448,6 @@ Presented <em>A Bootstrapping Approach to Introduce a Robust Multivariate Contro
     }
 
 
-
-    // LinkedIn
 
     if (
 
@@ -455,8 +465,6 @@ Presented <em>A Bootstrapping Approach to Introduce a Robust Multivariate Contro
 
 
 
-    // ORCID
-
     if (url.hostname === "orcid.org") {
 
       track("/external/orcid");
@@ -466,8 +474,6 @@ Presented <em>A Bootstrapping Approach to Introduce a Robust Multivariate Contro
     }
 
 
-
-    // Other external links
 
     if (url.origin !== window.location.origin) {
 
