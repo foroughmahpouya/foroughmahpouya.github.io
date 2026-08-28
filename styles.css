@@ -102,9 +102,13 @@ a:hover {
   margin-bottom: 0.85rem;
 }
 
-.contact-box a {
+.contact-box p a {
   display: block;
   margin-bottom: 0.28rem;
+}
+
+.contact-box .anchorjs-link {
+  display: none !important;
 }
 
 
