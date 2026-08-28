@@ -241,7 +241,7 @@ Presented <em>A Bootstrapping Approach to Introduce a Robust Multivariate Contro
 
 (function () {
 
-  // ANALYTICS_V3_CLICK_TRACKING
+  // ANALYTICS_V4_QUARTO_TAB_TRACKING
 
 
 
@@ -277,7 +277,7 @@ Presented <em>A Bootstrapping Approach to Introduce a Robust Multivariate Contro
 
     }).catch(function () {
 
-      // Never let analytics interfere with the website.
+      // Analytics must never interfere with the website.
 
     });
 
@@ -285,13 +285,29 @@ Presented <em>A Bootstrapping Approach to Introduce a Robust Multivariate Contro
 
 
 
-  // Record website opening
+  function slug(text) {
+
+    return text
+
+      .trim()
+
+      .toLowerCase()
+
+      .replace(/&/g, "and")
+
+      .replace(/[^a-z0-9]+/g, "-")
+
+      .replace(/^-+|-+$/g, "");
+
+  }
+
+
+
+  // Opening the website
 
   track("/");
 
 
-
-  // Record navigation, downloads, and external links
 
   document.addEventListener("click", function (event) {
 
@@ -300,6 +316,30 @@ Presented <em>A Bootstrapping Approach to Introduce a Robust Multivariate Contro
 
 
     if (!link) return;
+
+
+
+    // Quarto / Bootstrap tabs:
+
+    // Research, Publications, Teaching, Talks & News
+
+    if (link.getAttribute("data-bs-toggle") === "tab") {
+
+      const section = slug(link.textContent || "");
+
+
+
+      if (section) {
+
+        track("/section/" + section);
+
+      }
+
+
+
+      return;
+
+    }
 
 
 
@@ -327,31 +367,7 @@ Presented <em>A Bootstrapping Approach to Introduce a Robust Multivariate Contro
 
 
 
-    // Navigation to a section on this one-page website
-
-    if (url.origin === window.location.origin && url.hash) {
-
-      const section =
-
-        decodeURIComponent(url.hash.substring(1));
-
-
-
-      if (section) {
-
-        track("/section/" + section);
-
-      }
-
-
-
-      return;
-
-    }
-
-
-
-    // PDF / CV download
+    // CV and other PDF downloads
 
     if (url.pathname.toLowerCase().endsWith(".pdf")) {
 
@@ -381,7 +397,37 @@ Presented <em>A Bootstrapping Approach to Introduce a Robust Multivariate Contro
 
 
 
-    // Any other external website
+    // ORCID
+
+    if (url.hostname === "orcid.org") {
+
+      track("/external/orcid");
+
+      return;
+
+    }
+
+
+
+    // LinkedIn
+
+    if (
+
+      url.hostname === "linkedin.com" ||
+
+      url.hostname.endsWith(".linkedin.com")
+
+    ) {
+
+      track("/external/linkedin");
+
+      return;
+
+    }
+
+
+
+    // Other external websites
 
     if (url.origin !== window.location.origin) {
 
