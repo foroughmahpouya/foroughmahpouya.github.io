@@ -1,6 +1,15 @@
 <script>
 (function () {
   // ANALYTICS_FINAL_BOOTSTRAP_TABS
+  
+  // Do not track this browser if the owner opt-out flag is enabled.
+  try {
+    if (localStorage.getItem("fm_analytics_owner_optout") === "1") {
+      return;
+    }
+  } catch (e) {
+    // If localStorage is unavailable, analytics continues normally.
+  }
 
   const endpoint =
     "https://website-visit-logger.foroughmahpouya.workers.dev/collect";
