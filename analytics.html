@@ -1,12 +1,16 @@
 <script>
 (function () {
-  // ANALYTICS_V4_QUARTO_TAB_TRACKING
+  // ANALYTICS_FINAL_BOOTSTRAP_TABS
 
   const endpoint =
     "https://website-visit-logger.foroughmahpouya.workers.dev/collect";
 
+  const sent = new Set();
+
   function track(value) {
-    if (!value) return;
+    if (!value || sent.has(value)) return;
+
+    sent.add(value);
 
     fetch(endpoint, {
       method: "POST",
@@ -31,29 +35,39 @@
       .replace(/^-+|-+$/g, "");
   }
 
-  // Opening the website
+  // Website opened
   track("/");
 
+  // Quarto / Bootstrap tabs:
+  // Research, Publications, Teaching, Talks & News
+  document
+    .querySelectorAll('.research-tabs a[data-bs-toggle="tab"]')
+    .forEach(function (tab) {
+      tab.addEventListener("shown.bs.tab", function (event) {
+        const name = slug(event.target.textContent || "");
+
+        if (name) {
+          track("/section/" + name);
+        }
+      });
+    });
+
+  // Downloads and external links
   document.addEventListener("click", function (event) {
-    const link = event.target.closest("a");
+    const link = event.target.closest("a[href]");
 
     if (!link) return;
 
-    // Quarto / Bootstrap tabs:
-    // Research, Publications, Teaching, Talks & News
+    // Tabs are handled above.
     if (link.getAttribute("data-bs-toggle") === "tab") {
-      const section = slug(link.textContent || "");
-
-      if (section) {
-        track("/section/" + section);
-      }
-
       return;
     }
 
     const href = link.getAttribute("href");
 
-    if (!href) return;
+    if (!href || href.startsWith("mailto:")) {
+      return;
+    }
 
     let url;
 
@@ -63,24 +77,15 @@
       return;
     }
 
-    // CV and other PDF downloads
+    // CV / PDF download
     if (url.pathname.toLowerCase().endsWith(".pdf")) {
       track("/download" + url.pathname);
       return;
     }
 
     // Google Scholar
-    if (
-      url.hostname === "scholar.google.com" ||
-      url.hostname.endsWith(".scholar.google.com")
-    ) {
+    if (url.hostname === "scholar.google.com") {
       track("/external/google-scholar");
-      return;
-    }
-
-    // ORCID
-    if (url.hostname === "orcid.org") {
-      track("/external/orcid");
       return;
     }
 
@@ -93,7 +98,13 @@
       return;
     }
 
-    // Other external websites
+    // ORCID
+    if (url.hostname === "orcid.org") {
+      track("/external/orcid");
+      return;
+    }
+
+    // Other external links
     if (url.origin !== window.location.origin) {
       track("/external/" + url.hostname);
     }

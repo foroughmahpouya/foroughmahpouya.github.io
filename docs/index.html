@@ -241,7 +241,7 @@ Presented <em>A Bootstrapping Approach to Introduce a Robust Multivariate Contro
 
 (function () {
 
-  // ANALYTICS_V4_QUARTO_TAB_TRACKING
+  // ANALYTICS_FINAL_BOOTSTRAP_TABS
 
 
 
@@ -251,9 +251,17 @@ Presented <em>A Bootstrapping Approach to Introduce a Robust Multivariate Contro
 
 
 
+  const sent = new Set();
+
+
+
   function track(value) {
 
-    if (!value) return;
+    if (!value || sent.has(value)) return;
+
+
+
+    sent.add(value);
 
 
 
@@ -303,15 +311,45 @@ Presented <em>A Bootstrapping Approach to Introduce a Robust Multivariate Contro
 
 
 
-  // Opening the website
+  // Website opened
 
   track("/");
 
 
 
+  // Quarto / Bootstrap tabs:
+
+  // Research, Publications, Teaching, Talks & News
+
+  document
+
+    .querySelectorAll('.research-tabs a[data-bs-toggle="tab"]')
+
+    .forEach(function (tab) {
+
+      tab.addEventListener("shown.bs.tab", function (event) {
+
+        const name = slug(event.target.textContent || "");
+
+
+
+        if (name) {
+
+          track("/section/" + name);
+
+        }
+
+      });
+
+    });
+
+
+
+  // Downloads and external links
+
   document.addEventListener("click", function (event) {
 
-    const link = event.target.closest("a");
+    const link = event.target.closest("a[href]");
 
 
 
@@ -319,23 +357,9 @@ Presented <em>A Bootstrapping Approach to Introduce a Robust Multivariate Contro
 
 
 
-    // Quarto / Bootstrap tabs:
-
-    // Research, Publications, Teaching, Talks & News
+    // Tabs are handled above.
 
     if (link.getAttribute("data-bs-toggle") === "tab") {
-
-      const section = slug(link.textContent || "");
-
-
-
-      if (section) {
-
-        track("/section/" + section);
-
-      }
-
-
 
       return;
 
@@ -347,7 +371,11 @@ Presented <em>A Bootstrapping Approach to Introduce a Robust Multivariate Contro
 
 
 
-    if (!href) return;
+    if (!href || href.startsWith("mailto:")) {
+
+      return;
+
+    }
 
 
 
@@ -367,7 +395,7 @@ Presented <em>A Bootstrapping Approach to Introduce a Robust Multivariate Contro
 
 
 
-    // CV and other PDF downloads
+    // CV / PDF download
 
     if (url.pathname.toLowerCase().endsWith(".pdf")) {
 
@@ -381,27 +409,9 @@ Presented <em>A Bootstrapping Approach to Introduce a Robust Multivariate Contro
 
     // Google Scholar
 
-    if (
-
-      url.hostname === "scholar.google.com" ||
-
-      url.hostname.endsWith(".scholar.google.com")
-
-    ) {
+    if (url.hostname === "scholar.google.com") {
 
       track("/external/google-scholar");
-
-      return;
-
-    }
-
-
-
-    // ORCID
-
-    if (url.hostname === "orcid.org") {
-
-      track("/external/orcid");
 
       return;
 
@@ -427,7 +437,19 @@ Presented <em>A Bootstrapping Approach to Introduce a Robust Multivariate Contro
 
 
 
-    // Other external websites
+    // ORCID
+
+    if (url.hostname === "orcid.org") {
+
+      track("/external/orcid");
+
+      return;
+
+    }
+
+
+
+    // Other external links
 
     if (url.origin !== window.location.origin) {
 
