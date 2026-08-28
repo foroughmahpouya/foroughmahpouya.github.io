@@ -241,25 +241,19 @@ Presented <em>A Bootstrapping Approach to Introduce a Robust Multivariate Contro
 
 (function () {
 
+  // ANALYTICS_V3_CLICK_TRACKING
+
+
+
   const endpoint =
 
     "https://website-visit-logger.foroughmahpouya.workers.dev/collect";
 
 
 
-  // Avoid recording the same action repeatedly during one page load.
-
-  const sent = new Set();
-
-
-
   function track(value) {
 
-    if (!value || sent.has(value)) return;
-
-
-
-    sent.add(value);
+    if (!value) return;
 
 
 
@@ -283,7 +277,7 @@ Presented <em>A Bootstrapping Approach to Introduce a Robust Multivariate Contro
 
     }).catch(function () {
 
-      // Analytics must never interfere with the website.
+      // Never let analytics interfere with the website.
 
     });
 
@@ -291,57 +285,13 @@ Presented <em>A Bootstrapping Approach to Introduce a Robust Multivariate Contro
 
 
 
-  // 1. Record initial website visit
+  // Record website opening
 
-  track(window.location.pathname);
-
-
-
-  // 2. Record sections that the visitor actually reaches
-
-  const sections = document.querySelectorAll("main section[id]");
+  track("/");
 
 
 
-  const observer = new IntersectionObserver(
-
-    function (entries) {
-
-      entries.forEach(function (entry) {
-
-        if (entry.isIntersecting && entry.target.id) {
-
-          track("/section/" + entry.target.id);
-
-        }
-
-      });
-
-    },
-
-    {
-
-      // Detect when a section passes through the central part of the screen
-
-      rootMargin: "-35% 0px -55% 0px",
-
-      threshold: 0
-
-    }
-
-  );
-
-
-
-  sections.forEach(function (section) {
-
-    observer.observe(section);
-
-  });
-
-
-
-  // 3. Record important link clicks
+  // Record navigation, downloads, and external links
 
   document.addEventListener("click", function (event) {
 
@@ -349,7 +299,15 @@ Presented <em>A Bootstrapping Approach to Introduce a Robust Multivariate Contro
 
 
 
-    if (!link || !link.href) return;
+    if (!link) return;
+
+
+
+    const href = link.getAttribute("href");
+
+
+
+    if (!href) return;
 
 
 
@@ -359,7 +317,7 @@ Presented <em>A Bootstrapping Approach to Introduce a Robust Multivariate Contro
 
     try {
 
-      url = new URL(link.href, window.location.href);
+      url = new URL(href, window.location.href);
 
     } catch {
 
@@ -369,27 +327,23 @@ Presented <em>A Bootstrapping Approach to Introduce a Robust Multivariate Contro
 
 
 
-    // Internal section-navigation click
+    // Navigation to a section on this one-page website
 
-    if (
+    if (url.origin === window.location.origin && url.hash) {
 
-      url.origin === window.location.origin &&
+      const section =
 
-      url.pathname === window.location.pathname &&
-
-      url.hash
-
-    ) {
-
-      const sectionName = decodeURIComponent(
-
-        url.hash.substring(1)
-
-      );
+        decodeURIComponent(url.hash.substring(1));
 
 
 
-      track("/section/" + sectionName);
+      if (section) {
+
+        track("/section/" + section);
+
+      }
+
+
 
       return;
 
@@ -397,7 +351,7 @@ Presented <em>A Bootstrapping Approach to Introduce a Robust Multivariate Contro
 
 
 
-    // PDF download, including CV
+    // PDF / CV download
 
     if (url.pathname.toLowerCase().endsWith(".pdf")) {
 
@@ -411,7 +365,13 @@ Presented <em>A Bootstrapping Approach to Introduce a Robust Multivariate Contro
 
     // Google Scholar
 
-    if (url.hostname === "scholar.google.com") {
+    if (
+
+      url.hostname === "scholar.google.com" ||
+
+      url.hostname.endsWith(".scholar.google.com")
+
+    ) {
 
       track("/external/google-scholar");
 
@@ -421,7 +381,7 @@ Presented <em>A Bootstrapping Approach to Introduce a Robust Multivariate Contro
 
 
 
-    // Other external websites
+    // Any other external website
 
     if (url.origin !== window.location.origin) {
 
