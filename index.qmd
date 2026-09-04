@@ -66,7 +66,7 @@ My work has appeared in *IISE Transactions* and *Quality and Reliability Enginee
 
 ## Research
 
-My research asks how causal methods can be developed when observational data are shaped by both treatment decisions and differences in what is measured. I combine causal inference, representation learning, statistical methods, and decision analysis to develop methods that support decision-making in complex health systems.
+My research develops causal learning and decision methods for observational data, with a primary focus on healthcare. I combine causal inference, representation learning, and sequential experimentation to study whether interventions improve outcomes, for whom they work, and what additional evidence would be most useful for decision-making.
 
 ### Causal Learning from Observational Health Data
 I study how intervention definition, comparison groups, and measurement affect the conclusions that can be drawn from observational data. My healthcare work spans dementia management, caregiving, and cardiometabolic health and includes research on propensity-score study quality, treatment-effect heterogeneity, and adversarial balancing methods.
@@ -104,11 +104,11 @@ Das, S., Casucci, S., **Mahpouya, F.**, & Nikolaev, A. (2026). Treatment effect 
 :::
 
 ::: {.apa-reference}
-**Mahpouya, F.**, Das, S., Nikolaev, A., \& Casucci, S.(2026). Use of observational causal inference in dementia management studies: A systematic literature review. Manuscript under revision for *PLOS Digital Health*.
+**Mahpouya, F.**, Das, S., Nikolaev, A., \& Casucci, S. (2026). Use of observational causal inference in dementia management studies: A systematic literature review. Manuscript under revision for *PLOS Digital Health*.
 :::
 
 ::: {.apa-reference}
-Walker, R. J., Linde, S., Egede, L. E., **Mahpouya, F.**, Nikolaev, A., Fraser, R., \& Martinez, J.(2026). Assessing the Healthy Eating Index and health: Psychometric properties and prediction of cardiometabolic outcomes.
+Walker, R. J., Linde, S., Egede, L. E., **Mahpouya, F.**, Nikolaev, A., Fraser, R., \& Martinez, J. (2026). Assessing the Healthy Eating Index and health: Psychometric properties and prediction of cardiometabolic outcomes.
 Manuscript under review at *The Journal of Nutrition*.
 :::
 
