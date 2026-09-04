@@ -111,15 +111,16 @@ Buffalo, New York</p>
 <section id="forough-mahpouya" class="level1 main-column">
 <h1>Forough Mahpouya</h1>
 <div class="position-line">
-<p>Ph.D.&nbsp;Candidate in Industrial Engineering</p>
+<p>Ph.D.&nbsp;Candidate in Industrial and Systems Engineering</p>
 </div>
 <div class="affiliation-line">
 <p>Department of Industrial and Systems Engineering · University at Buffalo</p>
 </div>
 <div class="bio-text">
-<p>I develop causal inference and representation learning methods for decision-making using observational data, with health systems as my primary application. My research asks how treatment effects can be estimated reliably when treatment groups differ at baseline and when the information available about individuals is incomplete or differs across people.</p>
-<p>My dissertation develops balancing representation methods for continuous treatment causal estimation and applies causal and measurement methods to end-of-life care. A broader question in my research is how data visibility affects the evidence available for causal estimation: people with similar underlying characteristics or needs can be represented differently because one is measured more completely. I study how these differences affect treatment assignment, causal estimation, and subsequent decisions based on observational data.</p>
-<p>My broader research includes heterogeneous treatment-effect analysis, sequential experimentation, robust statistics, and statistical process control. My work has appeared in <em>IISE Transactions</em> and <em>Quality and Reliability Engineering International</em>. I received the 2025–2026 UB ISE Graduate Student Teaching Award and was selected as an IISE Future Faculty Fellow.</p>
+<p>I develop causal learning methods for evaluating decisions with observational data, with healthcare as my primary application. My research asks whether interventions actually improve outcomes, for whom they work, and how reliable conclusions can be drawn when the people receiving different interventions differ before treatment.</p>
+<p>My methodological work focuses on balancing representation learning for continuous interventions, repeated decisions, and time-to-event outcomes. I also study treatment-effect heterogeneity and sequential experimentation—how to decide which comparison, experiment, or review would provide the most useful additional evidence.</p>
+<p>My future research extends these ideas to human-AI decision systems. I am interested in how hospitals should evaluate AI systems after deployment, when recommendations begin to influence clinician decisions and patient outcomes, and when additional human review is necessary. I will also extend this work to AI-assisted quality inspection and other safety-critical systems.</p>
+<p>My work has appeared in <em>IISE Transactions</em> and <em>Quality and Reliability Engineering International</em>. I received the 2025–2026 University at Buffalo ISE Graduate Student Teaching Award and was selected as an IISE Future Faculty Fellow.</p>
 </div>
 <p><a href="files/Forough-Mahpouya-CV.pdf" class="cv-button" download=""> Download CV </a></p>
 <div class="tabset-margin-container"></div><div class="research-tabs panel-tabset">
@@ -127,23 +128,20 @@ Buffalo, New York</p>
 <div class="research-tabs tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <p>My research asks how causal methods can be developed when observational data are shaped by both treatment decisions and differences in what is measured. I combine causal inference, representation learning, statistical methods, and decision analysis to develop methods that support decision-making in complex health systems.</p>
-<section id="causal-representation-learning" class="level3">
-<h3 data-anchor-id="causal-representation-learning">Causal Representation Learning</h3>
-<p>Treatment groups in observational studies are rarely comparable at baseline. Balancing representation learning addresses this problem by learning representations that make treatment groups more comparable while preserving the information needed for outcome estimation.</p>
-<p>My dissertation develops theory for a neural balancing representation architecture for causal estimation with continuous treatments. I led the theoretical development, derived the identification conditions and supporting proofs, and designed and implemented the computational pipeline.</p>
-<p>A central question in this work is whether a representation preserves the information needed to estimate clinically meaningful differences in treatment effects, rather than achieving statistical balance alone.</p>
+<section id="causal-learning-from-observational-health-data" class="level3">
+<h3 data-anchor-id="causal-learning-from-observational-health-data">Causal Learning from Observational Health Data</h3>
+<p>I study how intervention definition, comparison groups, and measurement affect the conclusions that can be drawn from observational data. My healthcare work spans dementia management, caregiving, and cardiometabolic health and includes research on propensity-score study quality, treatment-effect heterogeneity, and adversarial balancing methods.</p>
+<p>A central focus of this work is balancing representation learning, which transforms measured characteristics so that people receiving different interventions become more comparable. One line of my dissertation develops a theoretical neural framework for continuous interventions and time-to-event outcomes, including identification conditions and connections to hazard modeling. In a separate applied study, I develop and evaluate continuous-treatment balancing losses and use them to estimate how caregiver burden affects the probability of long-term-care transition.</p>
 </section>
-<section id="measurement-and-data-availability" class="level3">
-<h3 data-anchor-id="measurement-and-data-availability">Measurement and Data Availability</h3>
-<p>Health records do not contain the same level of information for every person. Two people with similar underlying needs may therefore be represented differently because one is measured more completely.</p>
-<p>I treat differences in data availability as part of the causal problem rather than only as a preprocessing issue. My current applications focus on older adults and family caregivers, for whom caregiving circumstances and caregiver burden may influence care decisions and outcomes.</p>
-<p>This work includes developing measures of caregiver burden for analysis and studying how differences in what is measured may affect treatment assignment, causal estimation, and decision-making.</p>
+<section id="sequential-experimentation-and-targeted-evaluation" class="level3">
+<h3 data-anchor-id="sequential-experimentation-and-targeted-evaluation">Sequential Experimentation and Targeted Evaluation</h3>
+<p>I also study how to decide what information should be collected next when every possible comparison cannot be observed. In work published in IISE Transactions, my coauthors and I developed a sequential experimentation method that selects pairwise comparisons based on their expected value for identifying top-ranked alternatives.</p>
+<p>I am extending this idea to targeted evaluation of AI-assisted decisions, where limited human review can be directed toward cases most likely to reveal an important failure or resolve consequential uncertainty.</p>
 </section>
-<section id="treatment-effect-heterogeneity-and-decision-methods" class="level3">
-<h3 data-anchor-id="treatment-effect-heterogeneity-and-decision-methods">Treatment-Effect Heterogeneity and Decision Methods</h3>
-<p>Average treatment effects can mask important differences across people and settings. I study methods for identifying and interpreting heterogeneous treatment effects and clinically relevant subgroups.</p>
-<p>I developed a taxonomy and decision framework for heterogeneous treatment-effect methods that links characteristics of the data and the clinical objective to stability, interpretability, and fairness.</p>
-<p>My complementary work in sequential experimentation asks a related question: when more information can be collected, which observation or experiment is most valuable?</p>
+<section id="human-ai-decision-systems" class="level3">
+<h3 data-anchor-id="human-ai-decision-systems">Human-AI Decision Systems</h3>
+<p>My future research will study how AI systems should be evaluated after deployment, when their recommendations begin to influence human decisions and outcomes. I plan to begin with deterioration alerts for hospitalized patients, studying whether alerts improve care, which patients benefit, how clinician responses affect outcomes, and when human confirmation is needed.</p>
+<p>I will extend this framework to other AI-supported clinical decisions and to AI-assisted quality inspection and predictive maintenance.</p>
 </section>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
@@ -171,8 +169,7 @@ Buffalo, New York</p>
 </section>
 </div>
 <div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<p>My goal in teaching Industrial and Systems Engineering is to help students connect mathematical and computational models with the decisions those models are intended to support. I emphasize problem formulation, transparent assumptions, computational implementation, and interpretation of results.</p>
-<p>At the University at Buffalo, I have led recitations, laboratories, lectures, and review sessions across undergraduate and graduate courses.</p>
+<p>I believe good teaching begins with listening to how students reason and designing activities that make that reasoning visible. In Simulation Modeling and Analysis, I have led recitations and course lectures and developed case-based exercises using Arena and <span class="citation" data-cites="RISK">@RISK</span> in which students define systems, identify sources of uncertainty, make modeling choices, and explain what their results do and do not justify. These contributions, together with my broader work in the course, were recognized with the University at Buffalo ISE Graduate Student Teaching Award.</p>
 <section id="probability-statistics-and-simulation" class="level3">
 <h3 data-anchor-id="probability-statistics-and-simulation">Probability, Statistics, and Simulation</h3>
 <p><strong>EAS 305 — Applied Probability &amp; Statistics</strong><br>

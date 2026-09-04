@@ -37,7 +37,7 @@ Buffalo, New York
 # Forough Mahpouya
 
 <div class="position-line">
-Ph.D. Candidate in Industrial Engineering
+Ph.D. Candidate in Industrial and Systems Engineering
 </div>
 
 <div class="affiliation-line">
@@ -46,11 +46,13 @@ Department of Industrial and Systems Engineering · University at Buffalo
 
 ::: {.bio-text}
 
-I develop causal inference and representation learning methods for decision-making using observational data, with health systems as my primary application. My research asks how treatment effects can be estimated reliably when treatment groups differ at baseline and when the information available about individuals is incomplete or differs across people.
+I develop causal learning methods for evaluating decisions with observational data, with healthcare as my primary application. My research asks whether interventions actually improve outcomes, for whom they work, and how reliable conclusions can be drawn when the people receiving different interventions differ before treatment.
 
-My dissertation develops balancing representation methods for continuous treatment causal estimation and applies causal and measurement methods to end-of-life care. A broader question in my research is how data visibility affects the evidence available for causal estimation: people with similar underlying characteristics or needs can be represented differently because one is measured more completely. I study how these differences affect treatment assignment, causal estimation, and subsequent decisions based on observational data.
+My methodological work focuses on balancing representation learning for continuous interventions, repeated decisions, and time-to-event outcomes. I also study treatment-effect heterogeneity and sequential experimentation—how to decide which comparison, experiment, or review would provide the most useful additional evidence.
 
-My broader research includes heterogeneous treatment-effect analysis, sequential experimentation, robust statistics, and statistical process control. My work has appeared in *IISE Transactions* and *Quality and Reliability Engineering International*. I received the 2025–2026 UB ISE Graduate Student Teaching Award and was selected as an IISE Future Faculty Fellow.
+My future research extends these ideas to human-AI decision systems. I am interested in how hospitals should evaluate AI systems after deployment, when recommendations begin to influence clinician decisions and patient outcomes, and when additional human review is necessary. I will also extend this work to AI-assisted quality inspection and other safety-critical systems.
+
+My work has appeared in *IISE Transactions* and *Quality and Reliability Engineering International*. I received the 2025–2026 University at Buffalo ISE Graduate Student Teaching Award and was selected as an IISE Future Faculty Fellow.
 
 :::
 
@@ -66,30 +68,22 @@ My broader research includes heterogeneous treatment-effect analysis, sequential
 
 My research asks how causal methods can be developed when observational data are shaped by both treatment decisions and differences in what is measured. I combine causal inference, representation learning, statistical methods, and decision analysis to develop methods that support decision-making in complex health systems.
 
-### Causal Representation Learning
+### Causal Learning from Observational Health Data
+I study how intervention definition, comparison groups, and measurement affect the conclusions that can be drawn from observational data. My healthcare work spans dementia management, caregiving, and cardiometabolic health and includes research on propensity-score study quality, treatment-effect heterogeneity, and adversarial balancing methods.
 
-Treatment groups in observational studies are rarely comparable at baseline. Balancing representation learning addresses this problem by learning representations that make treatment groups more comparable while preserving the information needed for outcome estimation.
+A central focus of this work is balancing representation learning, which transforms measured characteristics so that people receiving different interventions become more comparable. One line of my dissertation develops a theoretical neural framework for continuous interventions and time-to-event outcomes, including identification conditions and connections to hazard modeling. In a separate applied study, I develop and evaluate continuous-treatment balancing losses and use them to estimate how caregiver burden affects the probability of long-term-care transition.
 
-My dissertation develops theory for a neural balancing representation architecture for causal estimation with continuous treatments. I led the theoretical development, derived the identification conditions and supporting proofs, and designed and implemented the computational pipeline.
+### Sequential Experimentation and Targeted Evaluation
 
-A central question in this work is whether a representation preserves the information needed to estimate clinically meaningful differences in treatment effects, rather than achieving statistical balance alone.
+I also study how to decide what information should be collected next when every possible comparison cannot be observed. In work published in IISE Transactions, my coauthors and I developed a sequential experimentation method that selects pairwise comparisons based on their expected value for identifying top-ranked alternatives.
 
-### Measurement and Data Availability
+I am extending this idea to targeted evaluation of AI-assisted decisions, where limited human review can be directed toward cases most likely to reveal an important failure or resolve consequential uncertainty.
 
-Health records do not contain the same level of information for every person. Two people with similar underlying needs may therefore be represented differently because one is measured more completely.
+### Human-AI Decision Systems
 
-I treat differences in data availability as part of the causal problem rather than only as a preprocessing issue. My current applications focus on older adults and family caregivers, for whom caregiving circumstances and caregiver burden may influence care decisions and outcomes.
+My future research will study how AI systems should be evaluated after deployment, when their recommendations begin to influence human decisions and outcomes. I plan to begin with deterioration alerts for hospitalized patients, studying whether alerts improve care, which patients benefit, how clinician responses affect outcomes, and when human confirmation is needed.
 
-This work includes developing measures of caregiver burden for analysis and studying how differences in what is measured may affect treatment assignment, causal estimation, and decision-making.
-
-### Treatment-Effect Heterogeneity and Decision Methods
-
-Average treatment effects can mask important differences across people and settings. I study methods for identifying and interpreting heterogeneous treatment effects and clinically relevant subgroups.
-
-I developed a taxonomy and decision framework for heterogeneous treatment-effect methods that links characteristics of the data and the clinical objective to stability, interpretability, and fairness.
-
-My complementary work in sequential experimentation asks a related question: when more information can be collected, which observation or experiment is most valuable?
-
+I will extend this framework to other AI-supported clinical decisions and to AI-assisted quality inspection and predictive maintenance.
 
 ## Publications
 
@@ -123,9 +117,7 @@ Das, S., Casucci, S., **Mahpouya, F.**, & Nikolaev, A. (2026). Treatment effect 
 
 ## Teaching
 
-My goal in teaching Industrial and Systems Engineering is to help students connect mathematical and computational models with the decisions those models are intended to support. I emphasize problem formulation, transparent assumptions, computational implementation, and interpretation of results.
-
-At the University at Buffalo, I have led recitations, laboratories, lectures, and review sessions across undergraduate and graduate courses.
+I believe good teaching begins with listening to how students reason and designing activities that make that reasoning visible. In Simulation Modeling and Analysis, I have led recitations and course lectures and developed case-based exercises using Arena and @RISK in which students define systems, identify sources of uncertainty, make modeling choices, and explain what their results do and do not justify. These contributions, together with my broader work in the course, were recognized with the University at Buffalo ISE Graduate Student Teaching Award.
 
 ### Probability, Statistics, and Simulation
 
