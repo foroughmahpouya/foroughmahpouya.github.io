@@ -107,6 +107,11 @@ Das, S., Casucci, S., **Mahpouya, F.**, & Nikolaev, A. (2026). Treatment effect 
 **Mahpouya, F.**, Das, S., Nikolaev, A., \& Casucci, S.(2026). Use of observational causal inference in dementia management studies: A systematic literature review. Manuscript under revision for *PLOS Digital Health*.
 :::
 
+::: {.apa-reference}
+Walker, R. J., Linde, S., Egede, L. E., **Mahpouya, F.**, Nikolaev, A., Fraser, R., \& Martinez, J.(2026). Assessing the Healthy Eating Index and health: Psychometric properties and prediction of cardiometabolic outcomes.
+Manuscript under review at *The Journal of Nutrition*.
+:::
+
 
 ### Research Profiles
 
