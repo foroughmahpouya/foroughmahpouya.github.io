@@ -100,11 +100,11 @@ I will extend this framework to other AI-supported clinical decisions and to AI-
 
 ### Manuscripts Under Review or Revision
 ::: {.apa-reference}
-Das, S., Casucci, S., **Mahpouya, F.**, & Nikolaev, A. (2026). Treatment effect estimation from observational data in healthcare: Study designs, inherent biases, and a propensity score focused quality assessment scale [Preprint]. *SSRN*. https://doi.org/10.2139/ssrn.6748684
+Das, S., Casucci, S., **Mahpouya, F.**, & Nikolaev, A. (2026). Treatment effect estimation from observational data in healthcare: Study designs, inherent biases, and a propensity score focused quality assessment scale. Manuscript under revision for *Health Services and Outcomes Research Methodology* [Preprint]. *SSRN*. https://doi.org/10.2139/ssrn.6748684
 :::
 
 ::: {.apa-reference}
-**Mahpouya, F.**, Das, S., Nikolaev, A., \& Casucci, S.(2026). Use of observational causal inference in dementia management studies: A systematic literature review. (Manuscript under revision for \textit{PLOS Digital Health}.)
+**Mahpouya, F.**, Das, S., Nikolaev, A., \& Casucci, S.(2026). Use of observational causal inference in dementia management studies: A systematic literature review. (Manuscript under revision for *PLOS Digital Health*.)
 :::
 
 
