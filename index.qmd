@@ -147,12 +147,6 @@ Supported instruction in production-planning and operations topics.
 **IE 585 — Industrial Engineering Principles and Practice in Healthcare**  
 Guest lectured on PICO question formulation and analysis of complex observational healthcare datasets.
 
-### Recognition
-
-**2025–2026 UB ISE Graduate Student Teaching Award**
-
-In Spring 2025, I also contributed to *Effective Pedagogy for Teaching Assistants* at UB, sharing approaches for recitation instruction and Universal Design for Learning.
-
 
 ## Talks & News
 
