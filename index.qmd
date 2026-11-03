@@ -94,6 +94,11 @@ My next research direction models who gets seen as part of the causal problem. M
 :::
 
 ::: {.apa-reference}
+  Das, P. S., Casucci, S., **Mahpouya, F.**, \& Nikolaev, A. (2026). Treatment effect estimation from observational data in healthcare: Study designs, inherent biases, and a propensity score-focused quality assessment scale.
+  Accepted for publication in  *Health Services and Outcomes Research Methodology*.
+:::
+
+::: {.apa-reference}
 **Mahpouya, F.**, Shahriari, H., & Roghanian, E. (2022). Design of a robust T² control chart, a re-sampling approach. *Quality and Reliability Engineering International, 38*(2), 924–940. https://doi.org/10.1002/qre.3022
 :::
 
