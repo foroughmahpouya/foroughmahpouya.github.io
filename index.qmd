@@ -105,16 +105,16 @@ My next research direction models who gets seen as part of the causal problem. M
 
 ### Manuscripts Under Review or Revision
 ::: {.apa-reference}
-Das, S., Casucci, S., **Mahpouya, F.**, & Nikolaev, A. (2026). Treatment effect estimation from observational data in healthcare: Study designs, inherent biases, and a propensity score focused quality assessment scale. Manuscript under revision for *Health Services and Outcomes Research Methodology*. [Preprint]. *SSRN*. https://doi.org/10.2139/ssrn.6748684
-:::
-
-::: {.apa-reference}
 **Mahpouya, F.**, Das, S., Nikolaev, A., \& Casucci, S. (2026). Use of observational causal inference in dementia management studies: A systematic literature review. Manuscript under revision for *PLOS Digital Health*.
 :::
 
 ::: {.apa-reference}
 Walker, R. J., Linde, S., Egede, L. E., **Mahpouya, F.**, Nikolaev, A., Fraser, R., \& Martinez, J. (2026). Assessing the Healthy Eating Index and health: Psychometric properties and prediction of cardiometabolic outcomes.
 Manuscript under review at *The Journal of Nutrition*.
+:::
+
+::: {.apa-reference}
+Rogers, A. H., Fligelman, S. J., Pester, B. D., Pielech, M., Klages, K. L.,**Mahpouya, F.**, Nikolaev, A., Groenewald, C. B., Ketterl, T. G., Bevers, L. M., Dietel, K. \& Palermo, T. M. (2026). Pain management and opioid use in adolescents and young adults with cancer: a qualitative analysis of patient and caregiver experiences Manuscript under review at *Supportive Care in Cancer*.
 :::
 
 
@@ -156,6 +156,8 @@ Guest lectured on PICO question formulation and analysis of complex observationa
 ## Talks & News
 
 ### 2026
+**INFORMS 2026 Job Market Showcase— San Francisco, California**  
+Presented *Observational causal inference under clinical prevalence bias.*
 
 **IISE Annual Conference & Expo — Arlington, Texas**  
 Presented *Adversarial Balancing for Estimating the Causal Effect of Caregiver Burden on Patient Long-Term Care Transitions.*
