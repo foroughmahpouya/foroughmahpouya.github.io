@@ -156,7 +156,7 @@ Guest lectured on PICO question formulation and analysis of complex observationa
 ## Talks & News
 
 ### 2026
-**INFORMS 2026 Job Market Showcase— San Francisco, California**  
+**INFORMS Job Market Showcase— San Francisco, California**  
 Presented *Observational causal inference under clinical prevalence bias.*
 
 **IISE Annual Conference & Expo — Arlington, Texas**  
