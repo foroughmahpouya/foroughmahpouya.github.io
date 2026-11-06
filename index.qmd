@@ -1,5 +1,5 @@
 ---
-pagetitle: "Forough Mahpouya | Industrial & Systems Engineering"
+pagetitle: "Ph.D. candidate, Industrial & Systems Engineering"
 description: "Forough Mahpouya is a Ph.D. candidate in Industrial and Systems Engineering at the University at Buffalo developing causal inference and representation learning methods for observational health data."
 page-layout: full
 ---
@@ -48,9 +48,7 @@ Department of Industrial and Systems Engineering · University at Buffalo
 
 I am a Ph.D. candidate in Industrial and Systems Engineering at the University at Buffalo, advised by Dr. Alexander Nikolaev and Dr. Sabrina Casucci, and expect to graduate in June 2027. I am on the academic job market for tenure-track faculty positions in 2026–27.
 
-My research connects causal inference, machine learning, and operations research to improve treatment and care decisions when healthcare data depend on who gets seen and what gets recorded. Patients who face barriers to care miss visits, receive less care, and leave fewer records, so they are the least visible in the data used to evaluate that care. I develop methods that model who is seen as part of the causal problem, so that treatment effects can be estimated, and decisions made, from incomplete records.
-
-My doctoral work focuses on aging and caregiving. I developed adversarial balancing representations for treatments measured on a continuous scale and used them to estimate how caregiver burden affects older adults’ transitions into long-term care, along with a measure that separates caregivers’ burden from the benefits of caregiving. A complementary line of work concerns sequential experimentation: identifying the best options while making efficient use of costly comparisons. Building on both, my next project studies opioid tapering, asking how tapering speed affects patients’ outcomes when follow-up visits are missed, and how to choose a taper speed when outcomes compete.
+My research develops causal learning and decision methods for healthcare data shaped by who gets seen: patients who face barriers to care miss visits and leave fewer records, so they are the least visible in the data used to evaluate their care. My doctoral work focuses on aging and caregiving. I developed adversarial balancing representations for treatments measured on a continuous scale and used them to estimate how caregiver burden affects older adults’ transitions into long-term care, along with a measure that separates caregivers’ burden from the benefits of caregiving. A complementary line of work concerns sequential experimentation: identifying the best options while making efficient use of costly comparisons. Next, I will study opioid tapering, asking how taper speed affects patients’ outcomes when follow-up visits are missed, and how to choose a taper speed when outcomes compete.
 
 In teaching, I emphasize the reasoning behind an engineering model: what it represents, which assumptions it relies on, and what conclusions it can support. Through case exercises and peer discussion, students explain their choices, consider alternatives, and revise their work, building the judgment to address unfamiliar problems, including evaluating AI recommendations.
 
@@ -105,7 +103,7 @@ My next research direction models who gets seen as part of the causal problem. M
 
 ### Manuscripts Under Review or Revision
 ::: {.apa-reference}
-**Mahpouya, F.**, Das, S., Nikolaev, A., \& Casucci, S. (2026). Use of observational causal inference in dementia management studies: A systematic literature review. Manuscript under revision for *PLOS Digital Health*.
+**Mahpouya, F.**, Das, P. S., Nikolaev, A., \& Casucci, S. (2026). Use of observational causal inference in dementia management studies: A systematic literature review. Manuscript under revision for *PLOS Digital Health*.
 :::
 
 ::: {.apa-reference}
@@ -114,7 +112,17 @@ Manuscript under review at *The Journal of Nutrition*.
 :::
 
 ::: {.apa-reference}
-Rogers, A. H., Fligelman, S. J., Pester, B. D., Pielech, M., Klages, K. L.,**Mahpouya, F.**, Nikolaev, A., Groenewald, C. B., Ketterl, T. G., Bevers, L. M., Dietel, K. \& Palermo, T. M. (2026). Pain management and opioid use in adolescents and young adults with cancer: a qualitative analysis of patient and caregiver experiences Manuscript under review at *Supportive Care in Cancer*.
+Rogers, A. H., Fligelman, S. J., Pester, B. D., Pielech, M., Klages, K. L., **Mahpouya, F.**, Nikolaev, A., Groenewald, C. B., Ketterl, T. G., Bevers, L. M., Dietel, K. \& Palermo, T. M. (2026). Pain management and opioid use in adolescents and young adults with cancer: a qualitative analysis of patient and caregiver experiences. Manuscript under review at *Supportive Care in Cancer*.
+:::
+
+### Working Papers
+
+::: {.apa-reference}
+**Mahpouya, F.**, Nikolaev, A., \& Casucci, S. (2026). Adversarial balancing for estimating the causal effect of caregiver burden on patient long-term-care transitions. Manuscript in preparation.
+:::
+
+::: {.apa-reference}
+**Mahpouya, F.**, Casucci, S., \& Sullivan, S. (2026). A population-based, bidirectional measure of caregiver risk and resilience: The Caregiver Burden–Benefit Index (CareBI). Manuscript in preparation. Earlier version: [preprint](PASTE-ARXIV-LINK).
 :::
 
 
@@ -159,6 +167,10 @@ Guest lectured on PICO question formulation and analysis of complex observationa
 **INFORMS Job Market Showcase— San Francisco, California**  
 Presented *Observational causal inference under clinical prevalence bias.*
 
+**INFORMS Annual Meeting — San Francisco, California (coauthored talks)**  
+*Balancing representation learning for dose-response-curve causal inference from healthcare data* (presented by A. Nikolaev).  
+*Hospice enrollment at the end of life: associations between long-term care status, functional dependence, and comorbidities* (presented by M. Molazadeh).
+
 **IISE Annual Conference & Expo — Arlington, Texas**  
 Presented *Adversarial Balancing for Estimating the Causal Effect of Caregiver Burden on Patient Long-Term Care Transitions.*
 
@@ -173,13 +185,7 @@ Selected for the 2025–2026 IISE Future Faculty Fellows Program.
 **INFORMS Annual Meeting — Atlanta, Georgia**  
 Presented *Representing Caregiver Burden in Observational Studies: Development of the Caregiver Burden Index (CareBI) Using NSOC.*
 
-### Earlier Presentations
 
-**2020 — 16th Iran International Industrial Engineering Conference**  
-Presented research on resampling methods for robust Hotelling T² control-chart design with limited data.
-
-**2019 — 15th Iran International Industrial Engineering Conference**  
-Presented *A Bootstrapping Approach to Introduce a Robust Multivariate Control Chart.*
 
 :::
 
