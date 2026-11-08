@@ -95,7 +95,7 @@ My next research direction models who gets seen as part of the causal problem. M
 ::: {.apa-reference}
   Das, P. S., Casucci, S., **Mahpouya, F.**, \& Nikolaev, A. (2026). Treatment effect estimation from observational data in healthcare: Study designs, inherent biases, and a propensity score-focused quality assessment scale.
   Accepted for publication in  *Health Services and Outcomes Research Methodology*.
-[Paper](https://link.springer.com/epdf/10.1007/s10742-026-00401-z?sharing_token=ekKlrfHTCOv2Q8UDfMEdHve4RwlQNchNByi7wbcMAY5nuuCCt3HRL89z3QruO9oTZFhd4KRHmod0NN73BZcTKV_3r6QRvnRohun-BRzoU42c0nw1Fr8le8C7I2j6Jk7wx6UO1nhVZZ3WXQY-HSgxIFQcmDtkHTlBYobxAciPZHg%3D){.cv-button target="_blank"}
+[Paper](https://link.springer.com/article/10.1007/s10742-026-00401-z){.cv-button target="_blank"}
 :::
 
 ::: {.apa-reference}
