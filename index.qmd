@@ -94,8 +94,8 @@ My next research direction models who gets seen as part of the causal problem. M
 
 ::: {.apa-reference}
   Das, P. S., Casucci, S., **Mahpouya, F.**, \& Nikolaev, A. (2026). Treatment effect estimation from observational data in healthcare: Study designs, inherent biases, and a propensity score-focused quality assessment scale.
-  Accepted for publication in  *Health Services and Outcomes Research Methodology*.
-[Paper](https://link.springer.com/article/10.1007/s10742-026-00401-z){.cv-button target="_blank"}
+  Accepted for publication in  *Health Services and Outcomes Research Methodology*. https://doi.org/10.1007/s10742-026-00401-z
+[Paper](https://doi.org/10.1007/s10742-026-00401-z){.cv-button target="_blank"}
 :::
 
 ::: {.apa-reference}
@@ -124,8 +124,7 @@ Rogers, A. H., Fligelman, S. J., Pester, B. D., Pielech, M., Klages, K. L., **Ma
 :::
 
 ::: {.apa-reference}
-**Mahpouya, F.**, Casucci, S., \& Sullivan, S. (2026). A population-based, bidirectional measure of caregiver risk and resilience: The Caregiver Burden–Benefit Index (CareBI). Prepared for submission. Earlier version: https://arxiv.org/abs/2510.21630
-[preprint](https://arxiv.org/abs/2510.21630){.cv-button target="_blank"}
+**Mahpouya, F.**, Casucci, S., \& Sullivan, S. (2026). A population-based, bidirectional measure of caregiver risk and resilience: The Caregiver Burden–Benefit Index (CareBI). Prepared for submission. [preprint](https://arxiv.org/abs/2510.21630){.cv-button target="_blank"}
 :::
 
 
