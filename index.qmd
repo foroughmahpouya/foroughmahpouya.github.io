@@ -120,11 +120,11 @@ Rogers, A. H., Fligelman, S. J., Pester, B. D., Pielech, M., Klages, K. L., **Ma
 ### Working Papers
 
 ::: {.apa-reference}
-**Mahpouya, F.**, Nikolaev, A., \& Casucci, S. (2026). Adversarial balancing for estimating the causal effect of caregiver burden on patient long-term-care transitions. Manuscript in preparation.
+**Mahpouya, F.**, Nikolaev, A., \& Casucci, S. (2026). Adversarial balancing for estimating the causal effect of caregiver burden on patient long-term-care transitions. Prepared for submission.
 :::
 
 ::: {.apa-reference}
-**Mahpouya, F.**, Casucci, S., \& Sullivan, S. (2026). A population-based, bidirectional measure of caregiver risk and resilience: The Caregiver Burden–Benefit Index (CareBI). Manuscript in preparation. Earlier version: [preprint](PASTE-ARXIV-LINK).
+**Mahpouya, F.**, Casucci, S., \& Sullivan, S. (2026). A population-based, bidirectional measure of caregiver risk and resilience: The Caregiver Burden–Benefit Index (CareBI). Prepared for submission. Earlier version: [preprint](https://arxiv.org/abs/2510.21630).
 :::
 
 
