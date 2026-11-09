@@ -124,14 +124,14 @@ Rogers, A. H., Fligelman, S. J., Pester, B. D., Pielech, M., Klages, K. L., **Ma
 :::
 
 ::: {.apa-reference}
-**Mahpouya, F.**, Casucci, S., \& Sullivan, S. (2026). A population-based, bidirectional measure of caregiver risk and resilience: The Caregiver Burden–Benefit Index (CareBI). Prepared for submission. [preprint](https://arxiv.org/abs/2510.21630){.cv-button target="_blank"}
+**Mahpouya, F.**, Casucci, S., \& Sullivan, S. (2026). A population-based, bidirectional measure of caregiver risk and resilience: The Caregiver Burden–Benefit Index (CareBI). Prepared for submission. [Preprint](https://arxiv.org/abs/2510.21630){.cv-button target="_blank"}
 :::
 
 
 ### Research Profiles
 
-[Google Scholar](https://scholar.google.com/citations?hl=en&user=VUgmv7cAAAAJ) ·
-[ORCID](https://orcid.org/0000-0001-8550-9508)
+[Google Scholar](https://scholar.google.com/citations?hl=en&user=VUgmv7cAAAAJ){.cv-button target="_blank"} ·
+[ORCID](https://orcid.org/0000-0001-8550-9508){.cv-button target="_blank"}
 
 
 ## Teaching
